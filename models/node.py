@@ -1,4 +1,4 @@
-class Node:
+class SentimentNode:
     def __init__(self, name, shortTerm=None, longTerm=None, parent=None, children=None):
         self.name = name
         self.sentiment = 0.0
@@ -24,6 +24,12 @@ class Node:
     
     def getLongTermContext(self):
         return self.getLongTermContext
+    
+    def setParent(self, parent):
+        self.parent = parent
+        
+    def addChild(self, child):
+        self.children.append(child)
     
     def getParent(self):
         return self.parent

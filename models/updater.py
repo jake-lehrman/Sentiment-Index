@@ -1,5 +1,9 @@
 class Updater:
     def update(self, node):
+        pass
+
+class AverageUpdater(Updater):
+    def update(self, node):
         """Simple average sentiment implementation"""
         children = node.getChildren()
         if len(children) == 0:
