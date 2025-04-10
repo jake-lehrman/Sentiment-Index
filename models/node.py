@@ -28,8 +28,8 @@ class Node:
     def getParent(self):
         return self.parent
     
+    def getChildren(self):
+        return self.children
     
-        
-        
     
         
