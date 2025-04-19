@@ -10,6 +10,9 @@ class SentimentNode:
     def setSentiment(self, sentiment):
         self.sentiment = sentiment
         
+    def getSentiment(self):
+        return self.sentiment
+        
     def setShortTermContext(self, embedding):
         self.shortTerm = embedding
         
